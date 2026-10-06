@@ -1,0 +1,103 @@
+// Compact evidence fixtures. Comment bodies are our summaries, never source quotes.
+// A demo is a saved observation, not a current offer or proof of payment.
+export const demos = [
+    {
+        id: 'expensify-prior-recommendation',
+        label: 'Real: US$250, con recomendación previa',
+        checkedAt: '2026-10-06T20:34:03.337Z',
+        issue: {
+            number: 96419,
+            title: '[$250] Saved search-Total spend is not shown right after saving the search results',
+            state: 'open',
+            html_url: 'https://github.com/Expensify/App/issues/96419',
+            body: 'Evidence summary: an open Expensify job advertises $250. Reviewers have already recommended existing proposals; an open issue is not necessarily available to a new contributor.',
+            evidenceType: 'summary',
+            labels: [{name: 'External'}, {name: 'Help Wanted'}, {name: 'Bug'}],
+            assignees: [{login: 'parasharrajat'}, {login: 'MonilBhavsar'}],
+            comments: 110,
+            updated_at: '2026-10-06T07:28:45Z',
+        },
+        repo: {
+            full_name: 'Expensify/App',
+            html_url: 'https://github.com/Expensify/App',
+            archived: false,
+            disabled: false,
+        },
+        comments: [
+            {
+                id: 5846652549,
+                user: {login: 'parasharrajat'},
+                author_association: 'CONTRIBUTOR',
+                created_at: '2026-09-26T13:28:08Z',
+                html_url: 'https://github.com/Expensify/App/issues/96419#issuecomment-5846652549',
+                evidenceType: 'summary',
+                body: 'Evidence summary: the C+ reviewer recommended emkhalid, with aswin-s as an alternative, and requested progress. This is a prior recommendation, not proof of a contract or payment.',
+            },
+        ],
+        // Only the decisive summary is shipped. All 110 source comments were
+        // retrieved during research, but this fixture is intentionally abridged.
+        commentsComplete: false,
+    },
+    {
+        id: 'archived-bugb',
+        label: 'Real: US$100 en Opire; GitHub sin importe, cerrado y archivado',
+        checkedAt: '2026-10-06T20:33:28.751Z',
+        issue: {
+            number: 1,
+            title: 'c1work',
+            state: 'closed',
+            html_url: 'https://github.com/rodrigompy/bugb/issues/1',
+            body: 'Evidence summary: the Opire board advertised $100 for this link. The GitHub issue itself has no reward amount or issue description; it is closed and its repository is archived.',
+            evidenceType: 'summary',
+            advertisedReward: {amount: 100, currency: 'USD', source: 'Opire board observation'},
+            labels: [],
+            assignees: [],
+            comments: 1,
+            closed_at: '2026-05-31T02:34:38Z',
+            updated_at: '2026-05-31T13:52:13Z',
+        },
+        repo: {
+            full_name: 'rodrigompy/bugb',
+            html_url: 'https://github.com/rodrigompy/bugb',
+            archived: true,
+            disabled: false,
+        },
+        comments: [
+            {
+                id: 4586905432,
+                user: {login: 'renyzbr-hash'},
+                author_association: 'NONE',
+                created_at: '2026-05-31T13:52:13Z',
+                html_url: 'https://github.com/rodrigompy/bugb/issues/1#issuecomment-4586905432',
+                evidenceType: 'summary',
+                body: 'Evidence summary: a commenter expressed interest and asked the owner to configure an integration or another payment method. There is no verified payment in this comment.',
+            },
+        ],
+        commentsComplete: true,
+    },
+    {
+        id: 'synthetic-clear-scan',
+        label: 'Demo sintética: US$500, sin propuestas visibles; no hay recompensa real',
+        checkedAt: '2026-10-06T20:34:03.337Z',
+        synthetic: true,
+        issue: {
+            number: 1,
+            title: '[SYNTHETIC DEMO] [$500] Improve a CSV import preview',
+            state: 'open',
+            html_url: null,
+            body: 'Synthetic test fixture only. The $500 amount, issue, repository and absence of proposals are invented for exploring the audit. No real job, sponsor, escrow or payment exists.',
+            evidenceType: 'synthetic',
+            labels: [{name: 'bounty'}, {name: 'Help Wanted'}],
+            assignees: [],
+            comments: 0,
+        },
+        repo: {
+            full_name: 'example/rewardlens-demo',
+            html_url: null,
+            archived: false,
+            disabled: false,
+        },
+        comments: [],
+        commentsComplete: true,
+    },
+];

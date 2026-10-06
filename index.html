@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Revisa la evidencia detrás de una recompensa de GitHub antes de invertir tu tiempo.">
+  <title>RewardLens · Mira antes de construir</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c4c42'/%3E%3Ccircle cx='14' cy='14' r='7' fill='none' stroke='%23e4f3bd' stroke-width='3'/%3E%3Cpath d='m19 19 7 7' stroke='%23e4f3bd' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="./" aria-label="RewardLens, inicio"><span class="mark" aria-hidden="true">◎</span> RewardLens</a><span class="top-note">Evidencia antes de esfuerzo</span><span class="version">LAB / 01</span></header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="dot"></span> EL TRABAJO EMPIEZA CON UNA BUENA PREGUNTA</div>
+    <h1>¿La recompensa<br>merece tu <em>tiempo?</em></h1>
+    <p class="intro">Una etiqueta con dólares cuenta una parte de la historia. Revisa el estado, las propuestas y las señales que faltan antes de empezar a construir.</p>
+    <form id="audit-form" class="audit-form">
+      <label for="issue-url">ENLACE DEL ISSUE DE GITHUB</label>
+      <div class="input-row"><input id="issue-url" type="url" placeholder="https://github.com/organizacion/repo/issues/123" required autocomplete="off" spellcheck="false"><button id="audit-button" type="submit">Revisar enlace <span aria-hidden="true">↗</span></button></div>
+      <span class="input-note">Fuentes públicas · Sin cuenta ni contraseña · Consulta directa a GitHub</span>
+    </form>
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+  </section>
+  <section class="workspace" aria-label="Informe de la recompensa">
+    <aside class="examples"><span class="section-label">PRUEBA CON EVIDENCIA</span><h2>No todo lo que<br>brilla está abierto.</h2><p>Explora dos casos que encontramos al buscar recompensas reales.</p><div id="demo-buttons"></div><div class="aside-note"><span aria-hidden="true">i</span><p>Los ejemplos son instantáneas fechadas. Una consulta en vivo puede mostrar cambios.</p></div></aside>
+    <div id="report" class="report" aria-live="polite">
+      <div class="empty-illustration" aria-hidden="true"><span class="orb">$</span><span class="orbit"></span><span class="ticket">STATE: ?</span></div>
+      <span class="section-label">EL IMPORTE ES EL INICIO</span><h2>El contexto es lo que falta.</h2><p class="empty-text">Pega un enlace o abre un ejemplo. Recibirás un informe con señales observables y enlaces para comprobarlas.</p>
+      <div class="empty-columns"><div><b>01</b><span>Estado real</span></div><div><b>02</b><span>Actividad y propuestas</span></div><div><b>03</b><span>Qué falta verificar</span></div></div>
+    </div>
+  </section>
+  <section class="principles"><div><span class="section-label">NO CONFUNDAS ESTAS TRES COSAS</span><h2>Anunciado. Aceptado. Cobrado.</h2></div><p>RewardLens lee señales públicas. No verifica que haya fondos reservados, que te hayan contratado ni que se haya realizado un pago. Confirma esos pasos con el cliente.</p></section>
+</main>
+<footer><span>RewardLens / herramienta de investigación</span><span>Tu tiempo también cuenta.</span></footer>
+<script type="module" src="app.mjs"></script>
+</body></html>
